@@ -16,8 +16,9 @@
 /*	01) Base
 /*------------------------------------------------------------------*/
 :root{
-    --main-color: #ffcc0d;
-    --text-color-for-main-bg: #000;
+    --main-color: #FCCF00;
+    --secondary-color: #056380;
+    --text-color-for-main-bg: #282828;
 }
 html {
 	overflow-x: hidden;
@@ -630,10 +631,22 @@ section{
 	left: 50%;
 	margin-left: -100px;
 }
+
 .main_title h3{
 	margin: 0;
 	padding: 0;
-	font-size: 72px;
+	font-size: 68px;
+	font-weight: 600;
+	line-height: 1;
+	padding-bottom: 29px;
+	position: relative;
+	text-transform: uppercase;
+	left: -5px;
+}
+.main_title .h3{
+	margin: 0;
+	padding: 0;
+	font-size: 68px;
 	font-weight: 600;
 	line-height: 1;
 	padding-bottom: 29px;
@@ -1977,10 +1990,7 @@ section{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-
-
-
-
+ 
 
 /* Responsive */
 @media(max-width: 1400px){
@@ -2047,3 +2057,27 @@ section{
 	.fn_cs_about_modern .left_part{width: 100%;}
 	.fn_cs_info_items ul{flex-direction: column;}
 }
+
+/* Style de base pour le menu de navigation */
+ 
+ 
+  
+  .navigation ul li {
+	position: relative;
+	display: block;  
+  }
+  
+  .navigation ul li a {
+	display: block;
+	color: white;
+	padding: 10px 15px;
+	text-decoration: none;
+  }
+  
+  .navigation ul li a:hover {
+	background-color: #ccc;
+  }
+   
+  .navigation ul li a.lh-1{
+	line-height: 1em;
+  }
